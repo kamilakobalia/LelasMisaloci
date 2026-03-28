@@ -1,0 +1,351 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fffaf5;
+  color: #2f2f2f;
+  line-height: 1.5;
+}
+
+.big-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 60px 0;
+}
+
+.left-container,
+.right-container {
+  flex: 1;
+}
+
+.left-container h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  color: #8b2e2e;
+}
+
+.left-container p {
+  font-size: 18px;
+  margin-bottom: 25px;
+  max-width: 500px;
+}
+
+.main-btn {
+  display: inline-block;
+  text-decoration: none;
+  background: #d94f4f;
+  color: #fff;
+  padding: 14px 24px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.main-btn:hover {
+  background: #b83f3f;
+}
+
+.right-container {
+  min-height: 280px;
+  background: #f3e7dc;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: #7a6b5d;
+}
+
+.sayidlebis-chamonatvali {
+  display: flex;
+  gap: 20px;
+  align-items: stretch;
+  justify-content: space-between;
+  margin: 20px 0 60px;
+}
+
+.basket-card {
+  flex: 1;
+  background: #fff;
+  border: 2px solid #eaded3;
+  border-radius: 18px;
+  padding: 25px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.basket-card:hover {
+  transform: translateY(-5px);
+  border-color: hsl(26, 15%, 69%);
+}
+
+.basket-card h2 {
+  margin-bottom: 20px;
+  color: #a13d3d;
+  font-size: 24px;
+}
+
+.basket-card div {
+  margin-bottom: 20px;
+}
+
+.basket-card input[type="radio"],
+.basket-card input[type="checkbox"] {
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.select-btn {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  background: #f2b84b;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.select-btn:hover {
+  background: #da9d2e;
+}
+
+#basket1:checked + .ClassicBasket,
+#basket2:checked + .CreativeBasket,
+#basket3:checked + .SweetBasket {
+  border: 2px solid #d94f4f;
+  box-shadow: 0 10px 24px rgba(217, 79, 79, 0.18);
+  transform: scale(1.02);
+}
+
+.payment-section {
+  background: #fff;
+  border-radius: 20px;
+  padding: 40px;
+  margin-bottom: 50px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+}
+
+.gadaxdis-metodi h2 {
+  font-size: 30px;
+  color: #8b2e2e;
+  margin-bottom: 10px;
+}
+
+.gadaxdis-metodi p {
+  margin-bottom: 25px;
+  color: #666;
+}
+
+.payment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 500px;
+}
+
+.payment-form input {
+  padding: 14px 16px;
+  border: 1px solid #d9cfc5;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+.payment-form input:focus {
+  border-color: #d94f4f;
+}
+
+.pay-btn {
+  border: none;
+  background: #4caf50;
+  color: #fff;
+  padding: 14px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.pay-btn:hover {
+  background: #3f9443;
+}
+
+.footer {
+  text-align: center;
+  padding: 25px;
+  background: #f3e7dc;
+  color: #6a5748;
+  font-size: 16px;
+}
+.right-container {
+  min-height: 300px;
+  background: #f3e7dc;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 10px;
+}
+
+/* მთავარი ფოტო */
+.right-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+/* სურვილისამებრ პატარა ჩრდილი */
+.right-container img {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.header {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 18px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #a13d3d;
+}
+
+.nav {
+  display: flex;
+  gap: 25px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #444;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  color: #d94f4f;
+}
+
+/* 📱 Tablet (≤ 900px) */
+@media (max-width: 900px) {
+
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .left-container,
+  .right-container {
+    width: 100%;
+  }
+
+  .right-container {
+    margin-top: 20px;
+  }
+
+  .sayidlebis-chamonatvali {
+    flex-direction: column;
+  }
+
+  .basket-card {
+    width: 100%;
+  }
+
+  .nav {
+    gap: 15px;
+  }
+}
+
+
+/* 📱 Mobile (≤ 600px) */
+@media (max-width: 600px) {
+
+  body {
+    padding: 10px;
+  }
+
+  .left-container h1 {
+    font-size: 26px;
+  }
+
+  .left-container p {
+    font-size: 16px;
+  }
+
+  .main-btn {
+    padding: 12px 18px;
+    font-size: 14px;
+  }
+
+  .basket-card {
+    padding: 15px;
+  }
+
+  .basket-card h2 {
+    font-size: 20px;
+  }
+
+  .payment-section {
+    padding: 20px;
+  }
+
+  .payment-form input {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .pay-btn {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  /* ჰედერი */
+  .header-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+}
