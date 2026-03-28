@@ -264,38 +264,7 @@ body {
   color: #d94f4f;
 }
 
-/* 📱 Tablet (≤ 900px) */
-@media (max-width: 900px) {
 
-  .hero-section {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .left-container,
-  .right-container {
-    width: 100%;
-  }
-
-  .right-container {
-    margin-top: 20px;
-  }
-
-  .sayidlebis-chamonatvali {
-    flex-direction: column;
-  }
-
-  .basket-card {
-    width: 100%;
-  }
-
-  .nav {
-    gap: 15px;
-  }
-}
-
-
-/* 📱 Mobile (≤ 600px) */
 @media (max-width: 600px) {
 
   body {
