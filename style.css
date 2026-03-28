@@ -217,7 +217,7 @@ body {
   transition: transform 0.4s ease, filter 0.4s ease;
 }
 
-/* სურვილისამებრ პატარა ჩრდილი */
+
 .right-container img {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
@@ -262,6 +262,34 @@ body {
 
 .nav a:hover {
   color: #d94f4f;
+}
+@media (max-width: 900px) {
+
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .left-container,
+  .right-container {
+    width: 100%;
+  }
+
+  .right-container {
+    margin-top: 20px;
+  }
+
+  .sayidlebis-chamonatvali {
+    flex-direction: column;
+  }
+
+  .basket-card {
+    width: 100%;
+  }
+
+  .nav {
+    gap: 15px;
+  }
 }
 
 
