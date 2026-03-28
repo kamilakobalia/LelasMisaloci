@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Easter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="header">
+  <div class="header-container">
+    <div class="logo">EasterBasket</div>
+
+    <nav class="nav">
+      <a href="#">მთავარი</a>
+      <a href="#baskets">კალათები</a>
+      <a href="#payment">გადახდა</a>
+      <a href="#footer">კონტაქტი</a>
+    </nav>
+  </div>
+</header>
+
+  <div class="big-container hero-section">
+    <div class="left-container">
+      <h1> ლელა გილოცავ აღდგომის ბრწყინვალე დღესასწაულს!</h1>
+      <p>აირჩიე სასურველი კალათა და დაგეგმე შენი დღესასწაული მარტივად</p>
+
+      <a href="#baskets" class="main-btn">დაგეგმე დღესასწაული</a>
+    </div>
+
+    <div class="right-container">
+      <img class="img"src="https://as2.ftcdn.net/jpg/03/27/16/69/1000_F_327166972_dACgEyWJtXxCshZRKCah4zutflLTyUER.jpg"/>
+    </div>
+  </div>
+
+  <div class="big-container">
+    <div class="sayidlebis-chamonatvali" id="baskets">
+
+      <input type="radio" name="basket" id="basket1" hidden>
+      <label for="basket1" class="ClassicBasket basket-card">
+        <h2>Classic Basket</h2>
+
+        <div>
+          Level 1 — Size<br><br>
+          <input type="radio" id="Size1" name="Size">
+          <label for="Size1">Small</label><br>
+
+          <input type="radio" id="Size2" name="Size">
+          <label for="Size2">Medium</label><br>
+
+          <input type="radio" id="Size3" name="Size">
+          <label for="Size3">Premium</label><br><br>
+        </div>
+
+        <div>
+          Level 2 — Style<br><br>
+          <input type="radio" id="Style1" name="Style">
+          <label for="Style1">Traditional</label><br>
+
+          <input type="radio" id="Style2" name="Style">
+          <label for="Style2">Modern</label><br>
+
+          <input type="radio" id="Style3" name="Style">
+          <label for="Style3">Luxury</label><br><br>
+        </div>
+
+        <div>
+          Level 3 — Items<br><br>
+          <input type="checkbox" id="Items1" name="Items1">
+          <label for="Items1">Eggs</label><br>
+
+          <input type="checkbox" id="Items2" name="Items2">
+          <label for="Items2">Easter bread</label><br>
+
+          <input type="checkbox" id="Items3" name="Items3">
+          <label for="Items3">Decorations</label><br>
+
+          <input type="checkbox" id="Items4" name="Items4">
+          <label for="Items4">Chocolates</label><br>
+        </div>
+
+        <a href="#payment" class="select-btn">გადახდაზე გადასვლა</a>
+      </label>
+
+
+      <input type="radio" name="basket" id="basket2" hidden>
+      <label for="basket2" class="CreativeBasket basket-card">
+        <h2>Creative Basket</h2>
+
+        <div>
+          Level 1 — Kit Type<br><br>
+          <input type="radio" id="KitType1" name="KitType">
+          <label for="KitType1">Kids</label><br>
+
+          <input type="radio" id="KitType2" name="KitType">
+          <label for="KitType2">Family</label><br>
+
+          <input type="radio" id="KitType3" name="KitType">
+          <label for="KitType3">Advanced</label><br><br>
+        </div>
+
+        <div>
+          Level 2 — Activity<br><br>
+          <input type="radio" id="Activity1" name="Activity">
+          <label for="Activity1">Egg painting</label><br>
+
+          <input type="radio" id="Activity2" name="Activity">
+          <label for="Activity2">Crafts</label><br>
+
+          <input type="radio" id="Activity3" name="Activity">
+          <label for="Activity3">DIY decor</label><br><br>
+        </div>
+
+        <div>
+          Level 3 — Materials<br><br>
+          <input type="checkbox" id="Materials1" name="Materials1">
+          <label for="Materials1">Paint</label><br>
+
+          <input type="checkbox" id="Materials2" name="Materials2">
+          <label for="Materials2">Brushes</label><br>
+
+          <input type="checkbox" id="Materials3" name="Materials3">
+          <label for="Materials3">Craft tools</label><br>
+
+          <input type="checkbox" id="Materials4" name="Materials4">
+          <label for="Materials4">Extras</label><br>
+        </div>
+
+        <a href="#payment" class="select-btn">გადახდაზე გადასვლა</a>
+      </label>
+
+
+      <input type="radio" name="basket" id="basket3" hidden>
+      <label for="basket3" class="SweetBasket basket-card">
+        <h2>Sweet Basket</h2>
+
+        <div>
+          Level 1 — Quantity<br><br>
+          <input type="radio" id="Quantity1" name="Quantity">
+          <label for="Quantity1">Light</label><br>
+
+          <input type="radio" id="Quantity2" name="Quantity">
+          <label for="Quantity2">Regular</label><br>
+
+          <input type="radio" id="Quantity3" name="Quantity">
+          <label for="Quantity3">Extra</label><br><br>
+        </div>
+
+        <div>
+          Level 2 — Sweet Type<br><br>
+          <input type="radio" id="SweetType1" name="SweetType">
+          <label for="SweetType1">Chocolate</label><br>
+
+          <input type="radio" id="SweetType2" name="SweetType">
+          <label for="SweetType2">Candy</label><br>
+
+          <input type="radio" id="SweetType3" name="SweetType">
+          <label for="SweetType3">Mixed</label><br><br>
+        </div>
+
+        <div>
+          Level 3 — Treats<br><br>
+          <input type="checkbox" id="Treats1" name="Treats1">
+          <label for="Treats1">Chocolate eggs</label><br>
+
+          <input type="checkbox" id="Treats2" name="Treats2">
+          <label for="Treats2">Candy box</label><br>
+
+          <input type="checkbox" id="Treats3" name="Treats3">
+          <label for="Treats3">Cookies</label><br>
+
+          <input type="checkbox" id="Treats4" name="Treats4">
+          <label for="Treats4">Extras</label><br>
+        </div>
+
+        <a href="#payment" class="select-btn">გადახდაზე გადასვლა</a>
+      </label>
+
+    </div>
+  </div>
+
+  <div class="big-container payment-section" id="payment">
+    <div class="gadaxdis-metodi">
+      <h2>გადახდა</h2>
+      <p>შეავსე ინფორმაცია შეკვეთის დასასრულებლად.</p>
+    </div>
+
+    <form class="payment-form">
+      <input type="text" placeholder="შეიყვანე მისამართი" required>
+      <input type="text" placeholder="ბარათის ნომერი" required>
+      <input type="password" placeholder="CVV" required>
+      <input type="text" placeholder="მოქმედების ვადა" required>
+      <button type="submit" class="pay-btn">გადახდა</button>
+    </form>
+  </div>
+
+  <footer class="footer">
+    <p>Wishing you a peaceful and joyful Easter ✨</p>
+  </footer>
+
+</body>
+</html>
